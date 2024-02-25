@@ -88,20 +88,57 @@ h4 {
     transform: translateY(128px);
 }
 
+.effect_balloons {
+    display: flex;
+    position: fixed;
+}
+.balloons {
+    position: fixed;
+    width: 9%;
+    opacity: 0;
+    animation: animate__fadeIn 25.0s;
+    animation-delay: 1.0s;
+    animation-fill-mode: forwards;
+}
+#balloon1 {
+    transform: translate(430px, 447px);
+}
+#balloon2 {
+    transform: translate(-655px, -100px);
+}
+#balloon3 {
+    transform: translate(-425px, 773px);
+}
+#balloon4 {
+    transform: translate(607px, -209px);
+}
+@keyframes animate__fadeIn {
+    0% {
+    opacity: 1;
+    top: 1200px;
+    width: 7%;
+    }
+    100% {
+    top: -1300px; 
+    opacity: 1;
+    width: 7%;
+    }
+ }
+
 #confetti {
     position: fixed;
     width: 100%;
-    animation: animate__slideInUp 2.5s;
+    animation: animate__fadeInUpBig 4s;
     animation-fill-mode: forwards;
  }
  
- @keyframes animate__slideInUp {
+ @keyframes animate__fadeInUpBig {
     0% {
     top: -300px; 
     opacity: 0%;
     transform: scale(0.8);
     }
-    30% {
+    20% {
     transform: scale(1.0);
     opacity: 100%;
     }
