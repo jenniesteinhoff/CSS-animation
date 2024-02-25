@@ -1,0 +1,115 @@
+/*Base Design*/
+html {
+    display: flex;
+}
+body {
+    display: flex;
+    width: 1400px;
+    height: 800px;
+    background-color: #FFF;
+}
+.container {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    background: linear-gradient(43deg, #DDD0BE 43%, rgba(221, 208, 190, 0.60) 85%);
+}
+.card-border {
+    display: flex;
+    width: 740px;
+    height: 440px;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid #BAA587;
+}
+html, body, .container {
+    align-items: center;
+    justify-content: center;
+}
+.text, .heading {
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    color: #000;
+}
+.text {
+    text-transform: uppercase;
+    font-family: "Old Standard TT", serif;
+    letter-spacing: 1.0px;
+}
+.heading {
+    text-transform: capitalize;
+    font-family: "Ephesis", cursive;
+}
+
+h1 {
+    font-size: 70px;
+    letter-spacing: 3.5px;
+}
+h2 {
+    font-size: 50px;
+    letter-spacing: 2.5px;
+}
+h3 {
+    font-size: 22px;
+}
+h4 {
+    font-size: 20px;
+}
+
+#invite {
+    line-height: 27.50px;
+    transform: translateY(57px);
+}
+#birthday {
+    line-height: 87.50px;
+    transform: translateY(82px);
+}
+#for {
+    line-height: 25px;
+    transform: translateY(91px);
+}
+#name {
+    line-height: 62.50px;
+    transform: translateY(107px);
+}
+#date {
+    line-height: 25px;
+    transform: translateY(120px);
+}
+
+#v1 {
+    transform: translateY(61px);
+}
+#v2 {
+    transform: translateY(112px);
+}
+#v3 {
+    transform: translateY(128px);
+}
+
+#confetti {
+    position: fixed;
+    width: 100%;
+    animation: animate__slideInUp 2.5s;
+    animation-fill-mode: forwards;
+ }
+ 
+ @keyframes animate__slideInUp {
+    0% {
+    top: -300px; 
+    opacity: 0%;
+    transform: scale(0.8);
+    }
+    30% {
+    transform: scale(1.0);
+    opacity: 100%;
+    }
+    70% {
+    opacity: 80%;
+    }
+    100% {
+    top: -600px; 
+    opacity: 0%;
+    }
+ }
