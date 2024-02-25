@@ -27,6 +27,7 @@ html, body, .container {
     justify-content: center;
 }
 .text, .heading {
+    z-index: 1;
     font-style: normal;
     font-weight: 400;
     text-align: center;
@@ -41,6 +42,8 @@ html, body, .container {
     text-transform: capitalize;
     font-family: "Ephesis", cursive;
 }
+
+/*Special Design*/
 
 h1 {
     font-size: 70px;
@@ -77,7 +80,9 @@ h4 {
     line-height: 25px;
     transform: translateY(120px);
 }
-
+#v1, #v2, #v3 {
+    z-index: 0;
+}
 #v1 {
     transform: translateY(61px);
 }
