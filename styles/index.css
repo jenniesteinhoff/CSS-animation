@@ -42,6 +42,12 @@ html, body, .container {
     text-transform: capitalize;
     font-family: "Ephesis", cursive;
 }
+.animate__animated.animate__fadeIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 2s;
+}
 
 /*Special Design*/
 
